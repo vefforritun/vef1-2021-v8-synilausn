@@ -1,0 +1,19 @@
+{
+  "name": "vef1-2021-v7-synilausn",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.js ./build/",
+    "build": "concurrently npm:copy:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "concurrently": "^6.3.0",
+    "cpy-cli": "^1.0.1"
+  }
+}
